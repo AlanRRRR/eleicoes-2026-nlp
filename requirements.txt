@@ -1,0 +1,18 @@
+# ETL - Análise de Planos de Governo 2026
+# Instale com: pip install -r requirements.txt
+
+# Extração de PDF
+pdfplumber>=0.10.0
+
+# NLP
+nltk>=3.8.0
+
+# Manipulação de dados
+pandas>=2.0.0
+
+# Banco de Dados
+sqlalchemy>=2.0.0          # ORM e engine de conexão
+psycopg2-binary>=2.9.0     # Driver PostgreSQL para Python (binário = sem compilar)
+
+# Variáveis de ambiente
+python-dotenv>=1.0.0       # Lê o arquivo .env automaticamente

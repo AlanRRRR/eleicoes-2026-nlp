@@ -1,0 +1,14 @@
+# Credenciais — NUNCA versionar
+.env
+
+# Ambiente virtual Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# PDFs originais (pesados, não versionar)
+*.pdf
+
+# Arquivos temporários
+*.log

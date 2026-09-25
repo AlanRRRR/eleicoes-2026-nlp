@@ -1,0 +1,76 @@
+{
+  "candidatos": [
+    {
+      "arquivo_pdf": "Plano de Governo Ronaldo Caiado Presidente.pdf",
+      "nome_candidato": "Ronaldo Caiado",
+      "sigla_partido": "União Brasil",
+      "numero_urna": 44,
+      "prioridade": 1,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "DiretrizesPlanodeGovernoFlavioBolsonaro20272030versaofinal.pdf",
+      "nome_candidato": "Flávio Bolsonaro",
+      "sigla_partido": "PL",
+      "numero_urna": 22,
+      "prioridade": 1,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "pje-3.  Proposta_Pablo_Marcal.pdf",
+      "nome_candidato": "Pablo Marçal",
+      "sigla_partido": "Novo",
+      "numero_urna": 30,
+      "prioridade": 1,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "0806JOB838PTlivroplanodegovernocompressed.pdf",
+      "nome_candidato": "Lula",
+      "sigla_partido": "PT",
+      "numero_urna": 13,
+      "prioridade": 1,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "Plano de Governo Missao 2026  Finalcompressed.pdf",
+      "nome_candidato": "Renan Santos",
+      "sigla_partido": "Missão",
+      "numero_urna": null,
+      "prioridade": 2,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "pje-Plano de Governo - O BRASIL DOS NOSSOS SONHOS .pdf",
+      "nome_candidato": "Augusto Cury",
+      "sigla_partido": "Avante",
+      "numero_urna": 70,
+      "prioridade": 2,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "Brasil em Primeiro Lugar.pdf",
+      "nome_candidato": "Wilson Grassi",
+      "sigla_partido": "Partido Democrata",
+      "numero_urna": 35,
+      "prioridade": 3,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "pje-ProgramaSAMARA_02 (1).pdf",
+      "nome_candidato": "Samara Martins",
+      "sigla_partido": "UP",
+      "numero_urna": 80,
+      "prioridade": 3,
+      "revisar": false
+    },
+    {
+      "arquivo_pdf": "Programa Politico do PCB eleicoes 20261.pdf",
+      "nome_candidato": "Edmilson Costa",
+      "sigla_partido": "PCB",
+      "numero_urna": 21,
+      "prioridade": 3,
+      "revisar": false
+    }
+  ]
+}

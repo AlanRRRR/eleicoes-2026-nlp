@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:16-alpine          # Alpine = imagem menor, mais leve
+    container_name: eleicoes_db
+    restart: unless-stopped            # Reinicia automaticamente se cair (exceto se você parar manualmente)
+    
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=pt_BR.UTF-8 --lc-ctype=pt_BR.UTF-8"
+      # Garante UTF-8 nativo no banco — crítico para acentos em português
+
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"  # Expõe no host Windows para o Power BI conectar
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data   # Dados persistentes (não somem ao parar o container)
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql:ro
+      # O Postgres executa automaticamente todo .sql nessa pasta na primeira inicialização
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  postgres_data:
+    name: eleicoes_postgres_data       # Nome explícito para fácil identificação no Docker Desktop
