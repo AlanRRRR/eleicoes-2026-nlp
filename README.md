@@ -7,7 +7,6 @@ Pipeline ETL + análise NLP dos planos de governo presidenciais brasileiros de 2
 - **Python** — extração de PDF, NLP, carga no banco
 - **PostgreSQL 16** via Docker — armazenamento
 - **Power BI** — visualização
-- **Plotly** — dashboard HTML alternativo
 
 ## Estrutura
 
